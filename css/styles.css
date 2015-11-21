@@ -1,0 +1,14 @@
+.titulo{
+    font-weight: bold;
+}
+
+.barra{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.resultado{
+    font-style: italic;
+    float: inherit;
+    margin-top: 10px;
+}

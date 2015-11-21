@@ -4,6 +4,7 @@
 	<head>
 		<title>Calculando operações aritiméticas com dois valores</title>
 		<script src="scripts/scripts.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/styles.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	</head>
 
@@ -12,26 +13,32 @@
 		</div>
 
 		<div class="corpo">
-			<form>
+			<form action="" method="get">
 	                
 	                <!-- Campos de Exibição -->
-	                <b>
+	                <div class="titulo">
 						Valores
-					</b>
+					</div>
 
-					<br/>
-	                <input name="primeiroValor" id="primeiroValor" value="0"/><br />
-	                <input name="segundoValor" id="segundoValor" value="0"/><br />
-	                <input name="exibeTotalValores" readonly="readonly" id="exibeTotalValores" disabled /><i>Resultado</i><br/>
+	                <input title="ValorUm" name="valorUm" id="primeiroValor" value="0"/><br />
+	                <input title="ValorDois" name="ValorDois" id="segundoValor" value="0"/><br />
+
+					<div class="resultado">
+						Resultado
+					</div>
+				<input title="TotalValores" name="TotalValores" readonly="readonly" id="exibeTotalValores" disabled />
 
 	                <!-- Botões de Ação -->
-	                <br/>
-	                <b>Operações</b>
-	                <br/>
-	                <input type="button" value="Somar" onclick="soma()" />
-	                <input type="button" value="Subtrair" onclick="subtrair()" />
-	                <input type="button" value="Multiplicar" onclick="multiplicar()" />
-	                <input type="button" value="Dividir" onclick="dividir()" />
+					<div class="barra"></div>
+
+					<div class="titulo">
+						Operações
+					</div>
+
+	                <input title = "Somar" type="button" value="Somar" onclick="soma()" />
+	                <input title= "Subtrair" type="button" value="Subtrair" onclick="subtrair()" />
+	                <input title= "Multiplicar" type="button" value="Multiplicar" onclick="multiplicar()" />
+	                <input title= "Dividir" type="button" value="Dividir" onclick="dividir()" />
 	        </form>	
 		</div>
 
